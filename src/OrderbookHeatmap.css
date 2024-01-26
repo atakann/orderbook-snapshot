@@ -1,0 +1,66 @@
+.orderbook-heatmap select {
+    margin-bottom: 20px;
+}
+
+.latest-price {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.data-table {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bids, .asks {
+    width: 48%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.order-row-depth::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 100%;
+    background-color: rgba(0,123,255,0.5);
+    z-index: 0;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.depth-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; 
+}
+
+.bids .order-row {
+    background-color: #ccffcc; 
+}
+
+.asks .order-row {
+    background-color: #ffcccc; 
+}
+
+.order-row > span {
+    position: relative;
+    z-index: 1;
+}
